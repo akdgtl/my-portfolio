@@ -48,7 +48,7 @@
   &.show {
     visibility: visible;
   }
-
+  // menu branding and menu nav
   &-branding,
   &-nav {
     display: flex;
@@ -82,10 +82,10 @@
     @include easeOut;
 
     &.show {
-      //Slide in from bottom
+    //Slide in from bottom
       transform: translate3d(0, 0, 0);
     }
-    // Portrait Side
+    // Portrait Slide
     .portrait {
       width: 250px;
       height: 250px;
@@ -126,7 +126,7 @@
   }
 }
 
-// Delay each nav-item slide by 0.1secs
+// Delay each nav item slide by 0.1s
 @for $x from 1 through 4 {
   .nav-item:nth-child(#{$x}) {
     transition-delay: $x * 0.1s;
